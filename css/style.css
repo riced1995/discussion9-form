@@ -1,0 +1,86 @@
+  /* Create an accessible color palette using var()function */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+
+    .skiptocontent {
+      background: #FFC857;
+      height: 30px;
+      left: 50%;
+      padding: 8px;
+      position: absolute;
+      transform: translateY(-800%);
+      transition: transform 0.3s;
+    }
+
+    .skiptocontent:focus {
+      transform: translateY(0);
+    }
+
+  form {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    width:70%;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #ffffff;
+    background: black;
+  }
+
+  body {
+    font-family: 'Lancelot', serif;
+  }
+
+  .radio {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /* background: #575294; */
+    color: #ffffff;
+  }
+
+  #name {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    background: #ffffff;
+    color: #0015ff;
+  }
+
+  #message {
+    grid-column: 1 / 2;
+    grid-row: 4;
+    width: 100%;
+    padding: 10px;
+    resize: vertical;
+  }
+
+  input,
+  textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+
+  label {
+    grid-column: 1 / 2;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
